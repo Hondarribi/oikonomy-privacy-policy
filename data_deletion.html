@@ -1,201 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solicitud de Eliminación de Datos - Oikonomy</title>
+    <title>Eliminación de Datos - Oikonomy</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
-            padding: 20px;
-        }
-        .container {
+        .content-page {
+            padding: 160px 0 100px;
             max-width: 800px;
             margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+
+        .content-card {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 24px;
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(10px);
+        }
+
         h1 {
-            color: #3B82F6;
-            margin-bottom: 10px;
-            font-size: 2.2em;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
         }
-        .subtitle {
-            color: #666;
-            margin-bottom: 30px;
-            font-size: 1.1em;
-        }
+
         h2 {
-            color: #1e40af;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.5em;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
         }
+
         p {
-            margin-bottom: 15px;
+            margin-bottom: 1.5rem;
+            color: var(--text-muted);
         }
-        ul {
-            margin-left: 30px;
-            margin-bottom: 15px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        .method-box {
-            background: #f0f9ff;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-left: 4px solid #3B82F6;
-        }
-        .method-box h3 {
-            color: #1e40af;
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-        .warning-box {
-            background: #fef3c7;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-left: 4px solid #f59e0b;
-        }
-        .contact-box {
-            background: #f0f9ff;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 30px;
-        }
-        a {
-            color: #3B82F6;
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
             text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .email-button {
-            display: inline-block;
-            background: #3B82F6;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 6px;
-            text-decoration: none;
+            margin-bottom: 2rem;
             font-weight: 600;
-            margin-top: 10px;
         }
-        .email-button:hover {
-            background: #2563eb;
-            text-decoration: none;
+
+        .instruction-box {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 12px 12px 0;
         }
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
-            h1 {
-                font-size: 1.8em;
-            }
+
+        .instruction-box h3 {
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>🗑️ Eliminación de Cuenta y Datos</h1>
-        <p class="subtitle">Oikonomy - Gestión Financiera Inteligente</p>
-        <p>
-            En Oikonomy respetamos tu privacidad y tu derecho a controlar tus datos personales.
-            Esta página explica cómo puedes eliminar tu cuenta y todos los datos asociados.
-        </p>
-        <h2>Métodos de Eliminación</h2>
-        <div class="method-box">
-            <h3>📱 Método 1: Desde la Aplicación (Recomendado)</h3>
-            <p>Puedes eliminar tu cuenta directamente desde la aplicación Oikonomy:</p>
-            <ol>
-                <li>Abre la aplicación Oikonomy</li>
-                <li>Ve a <strong>Perfil</strong> (icono de usuario en la barra inferior)</li>
-                <li>Toca <strong>Configuración</strong> o el icono de ajustes</li>
-                <li>Desplázate hasta el final y selecciona <strong>"Eliminar cuenta"</strong></li>
-                <li>Confirma la eliminación</li>
-            </ol>
-            <p><strong>Resultado:</strong> Tu cuenta y todos los datos asociados se eliminarán inmediatamente.</p>
-        </div>
-        <div class="method-box">
-            <h3>📧 Método 2: Solicitud por Email</h3>
-            <p>Si no puedes acceder a la aplicación o prefieres solicitar la eliminación por email:</p>
-            <p><strong>Envía un correo a:</strong></p>
-            <a href="mailto:oikonomy.app@gmail.com?subject=Solicitud de Eliminación de Cuenta&body=Hola,%0D%0A%0D%0ASolicito la eliminación de mi cuenta de Oikonomy y todos los datos asociados.%0D%0A%0D%0AEmail de la cuenta: [TU_EMAIL_AQUI]%0D%0A%0D%0AGracias."
-                class="email-button">
-                📧 Enviar Solicitud de Eliminación
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-house-chimney-window"></i>
+                <span>Oikonomy</span>
             </a>
-            <p style="margin-top: 15px;"><strong>Información requerida en el email:</strong></p>
+        </nav>
+    </header>
+
+    <main class="container content-page">
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Volver al inicio
+        </a>
+
+        <div class="content-card">
+            <h1>Eliminación de Datos</h1>
+            <p>En **Oikonomy**, creemos que tú debes tener el control total de tu información. Si deseas dejar de usar
+                la aplicación y eliminar tus datos personales, puedes hacerlo de forma sencilla.</p>
+
+            <h2>¿Qué datos se eliminan?</h2>
+            <p>Al solicitar la eliminación de tu cuenta, se borrarán de forma permanente los siguientes datos de
+                nuestros servidores (Supabase):</p>
             <ul>
-                <li>Asunto: "Solicitud de Eliminación de Cuenta"</li>
-                <li>Tu dirección de email registrada en Oikonomy</li>
-                <li>Confirmación de que deseas eliminar todos tus datos</li>
+                <li>Tu perfil de usuario (nombre y correo electrónico).</li>
+                <li>Todas tus transacciones registradas.</li>
+                <li>Tus cuentas y balances configurados.</li>
+                <li>Tus categorías personalizadas y metas de ahorro.</li>
+                <li>Tu vinculación con cualquier Hogar compartido.</li>
             </ul>
-            <p><strong>Plazo de respuesta:</strong> Procesaremos tu solicitud en un máximo de <strong>7 días
-                    hábiles</strong>.</p>
+
+            <h2>Opciones para la eliminación</h2>
+
+            <div class="instruction-box">
+                <h3>1. Desde la Aplicación (Recomendado)</h3>
+                <p>Es la forma más rápida y segura. Sigue estos pasos:</p>
+                <ol>
+                    <li>Abre <strong>Oikonomy</strong> en tu dispositivo.</li>
+                    <li>Ve a la pestaña de <strong>Ajustes</strong> (icono de engranaje).</li>
+                    <li>Desliza hasta el final a la sección <strong>"Zona Peligrosa"</strong>.</li>
+                    <li>Toca en <strong>"Eliminar cuenta de usuario"</strong>.</li>
+                    <li>Confirma la acción escribiendo la palabra solicitada.</li>
+                </ol>
+            </div>
+
+            <div class="instruction-box">
+                <h3>2. Mediante solicitud web</h3>
+                <p>Si ya has desinstalado la aplicación, puedes solicitar la eliminación enviando un correo electrónico
+                    a la dirección de soporte del desarrollador indicando tu email de registro.</p>
+                <p>Procesaremos tu solicitud en un plazo máximo de 48 horas.</p>
+            </div>
+
+            <h2>Plazo de retención</h2>
+            <p>Una vez confirmada la eliminación, los datos desaparecen de nuestra base de datos activa inmediatamente.
+                Las copias de seguridad de seguridad del sistema pueden retener la información de forma cifrada por un
+                periodo de hasta 30 días antes de su purga definitiva.</p>
         </div>
-        <h2>¿Qué Datos se Eliminan?</h2>
-        <p>Cuando eliminas tu cuenta, se eliminan <strong>permanentemente</strong>:</p>
-        <ul>
-            <li>✅ Tu información de cuenta (email, nombre de usuario)</li>
-            <li>✅ Todas tus transacciones (ingresos y gastos)</li>
-            <li>✅ Tus cuentas bancarias y saldos</li>
-            <li>✅ Presupuestos y metas de ahorro</li>
-            <li>✅ Categorías personalizadas</li>
-            <li>✅ Información del hogar compartido</li>
-            <li>✅ Cualquier archivo adjunto (recibos, notas)</li>
-        </ul>
-        <div class="warning-box">
-            <strong>⚠️ Importante:</strong> La eliminación de datos es <strong>permanente e irreversible</strong>.
-            Una vez eliminada tu cuenta, no podremos recuperar ningún dato.
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-house-chimney-window"></i>
+                <span>Oikonomy</span>
+            </div>
+            <p>&copy; 2026 Oikonomy. Gestión financiera inteligente.</p>
         </div>
-        <h2>Plazo de Eliminación</h2>
-        <p>
-            Los datos se eliminan de nuestros servidores activos <strong>inmediatamente</strong> tras la confirmación.
-            Las copias de seguridad se eliminan completamente en un plazo máximo de <strong>30 días</strong>.
-        </p>
-        <h2>Eliminación Parcial de Datos</h2>
-        <p>Si deseas eliminar solo ciertos datos sin eliminar tu cuenta completa:</p>
-        <ul>
-            <li><strong>Transacciones individuales:</strong> Desliza hacia la izquierda en la lista de transacciones
-            </li>
-            <li><strong>Cuentas bancarias:</strong> Edita y elimina desde la pantalla de cuentas</li>
-            <li><strong>Presupuestos y metas:</strong> Elimina desde sus respectivas pantallas</li>
-        </ul>
-        <p>Para solicitudes más específicas de eliminación parcial, contacta con nosotros por email.</p>
-        <h2>Datos Compartidos con Terceros</h2>
-        <p>
-            Oikonomy <strong>NO comparte</strong> tus datos personales con terceros para fines publicitarios o de
-            marketing.
-            Tus datos solo se almacenan en nuestro proveedor de servicios (Supabase) y se eliminan completamente cuando
-            eliminas tu cuenta.
-        </p>
-        <div class="contact-box">
-            <h3>📞 ¿Necesitas Ayuda?</h3>
-            <p>Si tienes preguntas sobre la eliminación de datos o necesitas asistencia:</p>
-            <p>
-                <strong>Email:</strong> <a href="mailto:privacy@oikonomy.app">oikonomy.app@gmail.com</a><br>
-                <strong>Tiempo de respuesta:</strong> Máximo 7 días hábiles
-            </p>
-        </div>
-        <hr style="margin: 40px 0; border: none; border-top: 1px solid #e5e7eb;">
-        <p style="text-align: center; color: #666; font-size: 0.9em;">
-            <a href="index.html">← Volver a la Política de Privacidad</a>
-        </p>
-        <p style="text-align: center; color: #666; font-size: 0.9em; margin-top: 20px;">
-            © 2026 Oikonomy. Todos los derechos reservados.
-        </p>
-    </div>
+    </footer>
 </body>
+
 </html>
