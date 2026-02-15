@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Oikonomy</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content-page {
+            padding: 160px 0 100px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content-card {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 24px;
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-house-chimney-window"></i>
+                <span>Oikonomy</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="container content-page">
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Volver al inicio
+        </a>
+
+        <div class="content-card">
+            <h1>Política de Privacidad</h1>
+            <p>Última actualización: 15 de febrero de 2026</p>
+
+            <p>En **Oikonomy**, la privacidad de tus datos financieros es nuestra máxima prioridad. Esta política
+                describe cómo manejamos la información dentro de la aplicación.</p>
+
+            <h2>1. Información que recopilamos</h2>
+            <p>Oikonomy recopila la información necesaria para el funcionamiento de la gestión financiera compartida:
+            </p>
+            <ul>
+                <li><strong>Información de cuenta:</strong> Correo electrónico y nombre (a través de Supabase Auth).
+                </li>
+                <li><strong>Datos financieros:</strong> Transacciones, categorías y balances introducidos manualmente
+                    por el usuario.</li>
+                <li><strong>Hogares:</strong> Identificadores de los grupos compartidos para permitir la sincronización
+                    entre dispositivos.</li>
+            </ul>
+
+            <h2>2. Uso de la información</h2>
+            <p>Utilizamos tus datos exclusivamente para:</p>
+            <ul>
+                <li>Proporcionar y mantener la funcionalidad de la aplicación.</li>
+                <li>Sincronizar datos entre los miembros de un mismo Hogar.</li>
+                <li>Mostrar estadísticas y reportes personalizados.</li>
+            </ul>
+
+            <h2>3. Almacenamiento y Seguridad</h2>
+            <p>Tus datos se almacenan de forma segura utilizando la infraestructura de <strong>Supabase</strong>, que
+                implementa estándares de cifrado y seguridad de nivel industrial. No vendemos ni compartimos tus datos
+                con terceros para fines publicitarios.</p>
+
+            <h2>4. Tus Derechos</h2>
+            <p>Puedes acceder, rectificar o eliminar todos tus datos directamente desde la configuración de la
+                aplicación. La eliminación de la cuenta conlleva la eliminación permanente de todos tus registros
+                personales asociados.</p>
+
+            <h2>5. Contacto</h2>
+            <p>Si tienes dudas sobre esta política, puedes contactarnos a través de los canales oficiales del proyecto.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-house-chimney-window"></i>
+                <span>Oikonomy</span>
+            </div>
+            <p>&copy; 2026 Oikonomy. Gestión financiera inteligente.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
